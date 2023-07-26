@@ -45,7 +45,7 @@ def main():
     dates = pd.to_datetime(['{}-{}'.format(y, m) for (m, y) in dict.keys()])
     
     
-    plt.bar(dates, dict.values())
+    plt.bar(dates, dict.values(), width=1.4)
     
     for i in range(len(dates)):
         plt.text(i, list(dict.values())[0], list(dict.values())[0], ha = 'center')
